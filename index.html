@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your App - Simple. Clean. beautiful.</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-family: 'Roboto',Sans-Serif;
+}
+body{
+min-height: 760px;
+background: #7db9e8; 
+background: -moz-linear-gradient(-45deg, #7db9e8 0%, #2989d8 50%, #1e5799 100%);
+background: -webkit-linear-gradient(-45deg, #7db9e8 0%,#2989d8 50%,#1e5799 100%);
+background: linear-gradient(135deg, #7db9e8 0%,#2989d8 50%,#1e5799 100%); 
+}
+
+
+.left-row{
+background-color: #349ad9;
+padding: 20px;
+width: 50%;
+flex: 1;
+}
+
+.right-row{
+align-content: center;
+background-color: #2883b8;	
+width: 50%;
+padding: 20px;
+display: inline-grid;
+flex: 1;
+text-align: center;
+}
+.container{
+margin-top:100px;
+min-height: 500px;
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+}
+
+ul li{
+	list-style-type: none;
+	margin-top: 20px;
+
+}
+
+input,button{
+	clear: both;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 90%;
+	height: 40px;
+}
+.btn-submit{
+	background-color: #3E77E8;
+	border-style: none;
+	border-radius: 3px;
+	font-size: 1.2em;
+}
+.btn-facebook{
+	background-color: #3B5998;
+	border-style: none;
+	border-radius: 3px;
+		font-size: 1.2em;
+
+}
+
+ul{
+	margin-top: 150px;
+}
+
+</style>
+<body>
+<div class="container">
+		<div class="left-row"> 
+		<h1>Your App</h1>
+		<h4>Simple. Clean. Beautiful.</h4>
+		<ul >
+			<li><span class="glyphicon glyphicon-chevron-right"> </span> Lorem imsum dolor sit amet</li>
+			<li><span class="glyphicon glyphicon-chevron-right"> </span> Lorem imsum dolor sit amet</li>
+			<li><span class="glyphicon glyphicon-chevron-right"> </span> Lorem imsum dolor sit amet</li>
+		</ul>
+		</div>
+
+		<div class="right-row">
+		<form method="POST" action="#">
+			<h1>Sign In</h1>
+			<input type="text" name="email" placeholder="E-mail">
+			<input type="password" name="password" placeholder="Password">
+			<button id="SignIn" type="submit" class="btn-submit"><i class="fa fa-location-arrow"></i> Sign in</button>
+			<p>OR</p>
+			<button id="FbSignin" type="submit" class="btn-facebook"><i class="fa fa-facebook-official"></i>     Sign in with Facebook</button>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
